@@ -27,16 +27,16 @@
             transform: translate(-50%,-50%);
         }
     </style>
+    <script src="../SwipeEventListener.js"></script>
 </head>
 <body>
     <div id="swipeElement">
         <p id="status">Nothing Happened</p>
     </div>
-    <script src="../SwipeEventListener.js"></script>
     <script>
         document.querySelector('#swipeElement').addEventListener('swipe', function(e){
             document.querySelector('#status').innerHTML = e.detail.direction;
-        })
+        });
     </script>
 </body>
 </html>
